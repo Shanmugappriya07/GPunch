@@ -96,16 +96,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <TextView
-        android:id="@+id/tvLoc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="📍 Sequis Tower Office"
-        android:textColor="@color/text_grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnClockIn" />
+
 
     <!-- Glassmorphic Stats Card -->
     <LinearLayout
@@ -125,9 +116,10 @@
             android:gravity="center"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/tvInTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="09:00"
+                android:text="--:--"
                 android:textColor="@color/accent_green"
                 android:textStyle="bold" />
             <TextView
@@ -145,6 +137,7 @@
             android:gravity="center"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/tvOutTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="--:--"
@@ -165,9 +158,10 @@
             android:gravity="center"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/tvWorkTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="08h 20m"
+                android:text="00h 00m"
                 android:textColor="@color/accent_blue"
                 android:textStyle="bold" />
             <TextView
